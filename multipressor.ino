@@ -15,6 +15,7 @@
 #include <Audio.h>
 #include <MIDI.h>
 #include "BAGuitar.h"
+#include "effect_compressor.h"
 
 MIDI_CREATE_DEFAULT_INSTANCE();
 using namespace midi;
