@@ -17,11 +17,6 @@
 #include "BAGuitar.h"
 #include "effect_compressor.h"
 
-MIDI_CREATE_DEFAULT_INSTANCE();
-using namespace midi;
-
-//#define ENABLE_MEM_TEST // uncomment this line and 'Save As' to a new location to test the SPI memory
-
 using namespace BAGuitar;
 AudioInputI2S            i2s1;           //xy=178,112
 AudioEffectCompressor    compressor1;    //xy=472,108
@@ -45,7 +40,6 @@ int spiErrorCount = 0;
 
 void setup() {
 
-  MIDI.begin(MIDI_CHANNEL_OMNI);
   Serial.begin(57600);
   delay(5);
 
